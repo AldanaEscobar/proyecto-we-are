@@ -41,21 +41,21 @@
   text-align: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
   position: sticky;
   top: 15px;
+  justify-content: space-around;
+  justify-content: space-evenly;
 }
 nav ul li {
   display: inline-block;
+  display: flex;
   border: 1px solid #826d5c;
   border-radius: 20px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  justify-content: space-evenly;
   height: 30px;
-  width: 100px;
-  display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 nav ul li a {
   display: flex;
@@ -68,6 +68,7 @@ nav {
   position: sticky;
   top: 20px;
   z-index: 2;
+  justify-content: space-evenly;
 }
 .bannerTop {
   background-color: #ead0ba;
@@ -81,7 +82,6 @@ nav {
   align-items: flex-start;
   flex-wrap: wrap;
 }
-
 .serviciosTitle {
   padding: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -89,7 +89,9 @@ nav {
   width: 100%;
   font-size: 25px;
 }
-
+.cardContainer{
+  display: flex;
+}
 .serviciosCard {
   background-color: #fffaf6;
   align-items: center;
@@ -97,16 +99,17 @@ nav {
   padding-left: 5px;
   padding-right: 5px;
   border-radius: 20px;
-  height: 450px;
+  height: 30rem;
   width: calc(33.33% - 20px);
   margin: 10px;
 }
 .imgServicios {
-  padding-top: 30px;
   width: 90%;
+  margin: 2rem;
 }
 .serviciosCard p {
   padding: 10px;
+  color: #826d5c;
 }
 .background {
   background-color: #fffaf6;

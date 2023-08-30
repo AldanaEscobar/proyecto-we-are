@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>WE.ARE</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
@@ -16,81 +21,141 @@
         <h2 class="bannerSubTitle">Centro de estética</h2>
       </div>
     </header>
-    <nav>
-      <ul class="navBar">
-        <li class="logo">
-          <a href="index.html"
-            ><img
-              src="./assets/images/Icon-Logo.png"
-              alt="logoWeAre"
-              class="logo"
-          /></a>
-        </li>
-        <li><a href="./pages/depilacionLaser.html">Depi Laser</a></li>
-        <li><a href="./pages/estetica.html">Estética</a></li>
-        <li><a href="#">T. Holística</a></li>
-        <li><a href="./pages/blog.html">Blog</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navBar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html"
+          ><img
+            src="./assets/images/Icon-Logo.png"
+            alt="logoWeAre"
+            class="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between align-items-center"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./pages/depilacionLaser.html"
+                >Depi Laser</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/estetica.html">Estética</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">T. Holística</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/blog.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <main>
       <div class="sectionServicios">
         <h3 class="serviciosTitle">Servicios We.Are</h3>
 
-        <div class="card" style="width: 18rem;">
-          <img src="./assets/images/serviciosDepilacionDefinitiva.png" class="card-img-top" alt="depilacion Definitiva">
-            <div class="card-body">
-            <a href="./pages/depilacionLaser.html" class="card-link">Depilacion Definitiva.</a>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./assets/images/serviciosDepilacionDefinitiva.png"
+                class="card-img-top"
+                alt="depilacion Definitiva"
+              />
+              <div class="card-body">
+                <a href="./pages/depilacionLaser.html"
+                  ><p class="card-text">Depilacion Definitiva.</p></a
+                >
+              </div>
             </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./assets/images/serviciosTerapiaHolistica.png"
+                class="card-img-top"
+                alt="Persona recibiendo reiki"
+              />
+              <div class="card-body">
+                <a href="#"><p class="card-text">Terapias Holísticas.</p></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./assets/images/serviciosEstetica.png"
+                class="card-img-top"
+                alt="Persona recibiendo reiki"
+              />
+              <div class="card-body">
+                <a href="./pages/estetica.html"
+                  ><p class="card-text">Estética</p></a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-        <section class="serviciosCard">
-          <a href="./pages/depilacionLaser.html">
-            <img
-              class="imgServicios"
-              src="./assets/images/serviciosDepilacionDefinitiva.png"
-              alt="depilacion Definitiva"
-            />
-            <p>Depilacion Definitiva.</p>
-          </a>
-        </section>
-        <section class="serviciosCard">
-          <a href="#">
-            <img
-              class="imgServicios"
-              src="./assets/images/serviciosTerapiaHolistica.png"
-              alt="Persona recibiendo reiki"
-            />
-            <p>Terapias Holísticas.</p>
-          </a>
-        </section>
-        <section class="serviciosCard">
-          <a href="./pages/estetica.html">
-            <img
-              class="imgServicios"
-              src="./assets/images/serviciosEstetica.png"
-            />
-            <p>Estética.</p>
-          </a>
-        </section>
       </div>
       <section class="background important">
         <h3>Solicitá tu turno ahora!</h3>
         <a class="button1" href="./pages/turnos.html">Quiero mi turno!</a>
       </section>
-      <div id="carouselExampleCaptionsDark" class="carousel carousel-dark slide">
+      <div
+        id="carouselExampleCaptionsDark"
+        class="carousel carousel-dark slide"
+      >
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptionsDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptionsDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptionsDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptionsDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptionsDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptionsDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
         <div class="carousel-inner w-100">
           <div class="carousel-item active w-10">
             <div class="d-flex flex-row align-items-center">
-              <img src="./assets/images/fechas-depi.png" class="w-40 imagNovedades" alt="Nuevas fechas depi laser">
-              <div class=" d-none d-md-block w-50 ">
+              <img
+                src="./assets/images/fechas-depi.png"
+                class="w-40 imagNovedades"
+                alt="Nuevas fechas depi laser"
+              />
+              <div class="d-none d-md-block w-50">
                 <a href="./pages/depilacionLaser.html">
                   <p class="carrouselText">
-                    Ya están las nuevas fechas para las jornadas de Depilación Definitiva.<br />
+                    Ya están las nuevas fechas para las jornadas de Depilación
+                    Definitiva.<br />
                     <b>Haz clic para reservar tu turno</b>
                   </p>
                 </a>
@@ -99,11 +164,16 @@
           </div>
           <div class="carousel-item w-10">
             <div class="d-flex flex-row align-items-center">
-              <img src="./assets/images/nuevos-tratamientos.png" class="w-40 imagNovedades" alt="Nuevos tratamientos estéticos">
-              <div class=" d-md-block w-50">
+              <img
+                src="./assets/images/nuevos-tratamientos.png"
+                class="w-40 imagNovedades"
+                alt="Nuevos tratamientos estéticos"
+              />
+              <div class="d-md-block w-50">
                 <a href="./pages/estetica.html">
-                 <p class="carrouselText">
-                    Nuevos tratamientos en circuito estético corporal y facial.<br />
+                  <p class="carrouselText">
+                    Nuevos tratamientos en circuito estético corporal y
+                    facial.<br />
                     <b>Ingresá para conocerlos</b>
                   </p>
                 </a>
@@ -111,33 +181,52 @@
             </div>
           </div>
           <div class="carousel-item w-10">
-            <div class="d-flex flex-row align-items-center ">
-              <img src="./assets/images/reiki.jpeg" class="w-40 imagNovedades" alt="Terapia holística">
-              <div class=" d-none d-md-block w-50">
+            <div class="d-flex flex-row align-items-center">
+              <img
+                src="./assets/images/reiki.jpeg"
+                class="w-40 imagNovedades"
+                alt="Terapia holística"
+              />
+              <div class="d-none d-md-block w-50">
                 <p class="carrouselText">
-                  ¡Nueva terapia holística para corregir los desequilibrios de energía!<br />
+                  ¡Nueva terapia holística para corregir los desequilibrios de
+                  energía!<br />
                   <b>Animate a probarlas!</b>
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptionsDark" data-bs-slide="prev">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptionsDark"
+          data-bs-slide="prev"
+        >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptionsDark" data-bs-slide="next">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptionsDark"
+          data-bs-slide="next"
+        >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      
+
       <a href="https://api.whatsapp.com/send/?phone=1535024321" target="_blank">
         <img src="./assets/images/Whatsapp.png" class="wsp" />
       </a>
     </main>
     <br />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
     <footer>
       <section>
         <h5>Seguinos en nuestras redes sociales</h5>
@@ -169,12 +258,14 @@
       <section>
         <h5>
           <a href="./pages/contacto.html">Dejanos tu mensaje!</a>
-          <a href="">
-            Preguntas frecuentes</a
-          >
+          <a href=""> Preguntas frecuentes</a>
         </h5>
       </section>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
