@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WE.ARE</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css" />
@@ -71,17 +72,17 @@
       </section>
       <div id="carouselExampleCaptionsDark" class="carousel carousel-dark slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptionsDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptionsDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptionsDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="carousel-content">
-              <img src="./assets/images/fechas-depi.png" class="w-50" alt="Nuevas fechas depi laser">
-              <div class="carousel-caption d-none d-md-block w-25">
+        <div class="carousel-inner w-100">
+          <div class="carousel-item active w-10">
+            <div class="d-flex flex-row align-items-center">
+              <img src="./assets/images/fechas-depi.png" class="w-40 imagNovedades" alt="Nuevas fechas depi laser">
+              <div class=" d-none d-md-block w-50 ">
                 <a href="./pages/depilacionLaser.html">
-                  <p>
+                  <p class="carrouselText">
                     Ya están las nuevas fechas para las jornadas de Depilación Definitiva.<br />
                     <b>Haz clic para reservar tu turno</b>
                   </p>
@@ -89,12 +90,12 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="carousel-content">
-              <img src="./assets/images/nuevos-tratamientos.png" class="w-50" alt="Nuevos tratamientos estéticos">
-              <div class="carousel-caption d-none d-md-block w-25">
+          <div class="carousel-item w-10">
+            <div class="d-flex flex-row align-items-center">
+              <img src="./assets/images/nuevos-tratamientos.png" class="w-40 imagNovedades" alt="Nuevos tratamientos estéticos">
+              <div class=" d-md-block w-50">
                 <a href="./pages/estetica.html">
-                  <p>
+                 <p class="carrouselText">
                     Nuevos tratamientos en circuito estético corporal y facial.<br />
                     <b>Ingresá para conocerlos</b>
                   </p>
@@ -102,67 +103,34 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+          <div class="carousel-item w-10">
+            <div class="d-flex flex-row align-items-center ">
+              <img src="./assets/images/reiki.jpeg" class="w-40 imagNovedades" alt="Terapia holística">
+              <div class=" d-none d-md-block w-50">
+                <p class="carrouselText">
+                  ¡Nueva terapia holística para corregir los desequilibrios de energía!<br />
+                  <b>Animate a probarlas!</b>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptionsDark" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptionsDark" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-
-      <div class="novedadesIndex">
-        <section class="cardNovedades">
-          <a href="./pages/depilacionLaser.html">
-            <img
-              class="imagNovedades"
-              src=""
-              alt="Nuevas fechas depi laser"
-            />
-          </a>
-        </section>
-        <section class="cardNovedades">
-          <a href="./pages/estetica.html"
-            ><img
-              class="imagNovedades"
-              src="./assets/images/nuevos-tratamientos.png"
-              alt=""
-            />
-            <p>
-              Nuevos tratamientos en circuito estético corporal y facial.<br />
-              <b>Ingresá para conocerlos!</b>
-            </p>
-          </a>
-        </section>
-        <section class="cardNovedades">
-          <a href=""
-            ><img
-              class="imagNovedades"
-              src="./assets/images/reiki.jpeg"
-              alt="Terapia holistica"
-            />
-            <p>
-              ¡Nueva terapia holística para corregir los desequilibrios de
-              energía!<br />
-              <b>Animate a probarlas!</b>
-            </p>
-          </a>
-        </section>
-      </div>
+      
       <a href="https://api.whatsapp.com/send/?phone=1535024321" target="_blank">
         <img src="./assets/images/Whatsapp.png" class="wsp" />
       </a>
     </main>
     <br />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <footer>
       <section>
         <h5>Seguinos en nuestras redes sociales</h5>

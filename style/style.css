@@ -124,6 +124,10 @@ nav {
 section h3 {
     padding: 20px;
 }
+.carrouselText{
+  margin: 10px;
+  text-align: center;
+}
 .button1 {
   justify-content: center;
   align-content: center;
