@@ -5,6 +5,11 @@
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #826d5c;
 }
+.row{
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
 .banner {
   background-image: url("../assets/images/banner.png");
   background-size: cover;
@@ -17,18 +22,27 @@
 .bannerTitle {
   font-weight: bold;
   text-align: center;
-  font-size: 100px;
+  font-size: 10rem;
   color: #826d5c;
 }
 .bannerSubTitle {
   font-weight: 80;
   text-align: center;
-  font-size: 80px;
+  font-size: 5rem;
   color: #826d5c;
 }
 .logo {
   border: 0px solid #ffffff;
   box-shadow: 0px 0px 0px 0px;
+}
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.navbar-collapse {
+  flex-grow: 0;
 }
 .navBar {
   border: 1px solid #826d5c;
@@ -44,8 +58,9 @@
   align-items: center;
   position: sticky;
   top: 15px;
-  justify-content: space-around;
-  justify-content: space-evenly;
+  justify-content: center;
+  justify-content: center;
+  align-content: center;
 }
 nav ul li {
   display: inline-block;
@@ -94,14 +109,6 @@ nav {
 }
 .serviciosCard {
   background-color: #fffaf6;
-  align-items: center;
-  justify-content: center;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-radius: 20px;
-  height: 30rem;
-  width: calc(33.33% - 20px);
-  margin: 10px;
 }
 .imgServicios {
   width: 90%;
@@ -174,7 +181,7 @@ section h3 {
     width: 1000px;
   }
   .imagNovedades {
-    margin: 10px;
+    margin: 5px;
     border-radius: 15px;
   }
   .depiLaserSubTitle {
@@ -370,4 +377,46 @@ footer {
   .Text1 { grid-area: 2 / 4 / 4 / 7; }  
   .img3 { grid-area: 4 / 4 / 6 / 7; }  
   .button { grid-area: 5 / 1 / 6 / 4; }  
+
+  @media (max-width: 425px){
+.bannerTitle{
+  font-size: 4rem;
+}
+.bannerSubTitle{
+  font-size: 3rem;
+}
+.serviciosTitle {
+  font-size: 1rem;
+}
+footer section a {
+ font-size: smaller;
+}
+.imagNovedades{
+  width: 25rem;
+}
+.col{
+  padding: 0px;
+  width: 25rem;
+  align-items: center;
+}
+.serviciosCard{
+  width: 25rem;
+}
+.row{
+  justify-content: center;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+}
+footer section {
+  width: 100%;
+  align-items: center;
+  margin: 10px;
+}
+.wsp{
+  height: 3rem;
+}
+}
+
   
