@@ -87,8 +87,9 @@ nav {
 }
 .bannerTop {
   background-color: #ead0ba;
-  padding: 30px;
-  border-radius: 0 0 25px 25px;
+  padding: 2rem;
+  border-radius: 0 0 2rem 2rem;
+  width: 100%;
 }
 .sectionServicios {
   display: flex;
@@ -121,6 +122,7 @@ nav {
 .background {
   background-color: #fffaf6;
   border-radius: 20px;
+  width: 100%;
 }
 .important {
   margin-top: 50px;
@@ -417,6 +419,33 @@ footer section {
 .wsp{
   height: 3rem;
 }
+/* Asegúrate de definir el ancho de tu contenedor para las condiciones de la media query */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr; 
+  grid-template-rows: 100px 170px 15px 170px 0.5fr 1fr 1fr;
 }
 
-  
+.img1 { grid-area: 2 / 1 / 4 / 3; }
+.img2 { grid-area: 3 / 2 / 5 / 4; }
+.Title { grid-area: 1 / 1 / 2 / 4; }
+.button { grid-area: 5 / 1 / 6 / 4; }
+.Text1 { grid-area: 6 / 1 / 7 / 4; }
+.img3 { grid-area: 7 / 1 / 8 / 4;}
+
+.depiImage {
+  max-width: 25rem;
+  margin: 10px;
+}
+
+.depiImageInfo {
+  max-width: 93%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.depiLaserSubTitle {
+  font-size: 15px;
+  margin: 10px;
+}
+  }
