@@ -1,0 +1,37 @@
+.logo {
+  border: 0px solid #ffffff;
+  box-shadow: 0px 0px 0px 0px;
+}
+.navContainer {
+  display: flex;
+  justify-content: space-evenly;
+  position: sticky;
+  .nav-link {
+    color: #826d5c;
+    font-family: $principalFont;
+    text-align: center; 
+  }
+  .navBar {
+    border: 1px solid #826d5c;
+    border-radius: 25px;
+    height: 60px;
+    width: 95%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    background-color: #ffffff;
+  }
+}
+nav {
+  ul {
+    li {
+      display: flex;
+      border: 1px solid #826d5c;
+      border-radius: 20px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      height: 30px;
+      width: 7rem;
+      align-items: center;
+
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.containerDepi {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  .img1 {
+    grid-area: 2 / 1 / 4 / 3;
+  }
+  .img2 {
+    grid-area: 3 / 2 / 5 / 4;
+  }
+  .title {
+    grid-area: 1 / 1 / 2 / 7;
+  }
+  .text1 {
+    grid-area: 2 / 4 / 4 / 7;
+  }
+  .img3 {
+    grid-area: 4 / 4 / 6 / 7;
+  }
+  .button {
+    grid-area: 5 / 1 / 6 / 4;
+  }
+  .depiLaserSubTitle {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    color: $fontColor;
+  }
+  .bold {
+    font-weight: bold;
+    margin: 30px;
+  }
+  .depiImageInfo {
+    max-width: 93%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .depiImage {
+    max-width: 30rem;
+    margin: 10px;
+  }
+  .text{
+    li {
+        margin: 10px;
+        color:$fontColor
+  }
+}
+.buttonContainer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+  }
+}

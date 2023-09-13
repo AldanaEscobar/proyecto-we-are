@@ -1,0 +1,87 @@
+*{
+    font-family: $principalFont;
+}
+.sectionServicios{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+.servicesCard {
+    background-color: $backgroundColor;
+    align-items: center;
+    a {
+        color:$fontColor;
+    }
+  }
+  .imgServicios {
+    width: 90%;
+    margin: 1rem;
+  }
+}
+.principalTitle {
+  padding: 30px;
+  font-weight: bolder;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  color: $fontColor;
+}
+
+.important{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.background {
+    background-color: $backgroundColor;
+    border-radius: 20px;
+    width: 100%;
+    h3{
+        padding: 20px;
+        color: $fontColor;
+        
+    }
+  }
+  .carrouselText{
+    margin: 10px;
+    text-align: center;
+    color: $fontColor;
+    a {
+        text-decoration: none;
+    }
+  }
+.imagCarousel{
+    margin-left: 4rem;
+    border-radius: 15px;
+}
+.wsp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  .button1 {
+    justify-content: center;
+    align-content: center;
+    background-color: #ead0ba;
+    color: #ffffff;
+    border: 1px solid #b4a090;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    position: justify;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+  }
+.button2 {
+    position: relative;
+    margin: 10px;
+    width: 300px;
+    flex-direction: column;
+    color:#826D5C
+  }
