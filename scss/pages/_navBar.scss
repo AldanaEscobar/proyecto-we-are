@@ -1,11 +1,14 @@
 .logo {
   border: 0px solid #ffffff;
   box-shadow: 0px 0px 0px 0px;
+  transition: all 0.2s;
 }
+.logo:hover {
+  transform: scale(1.05);
+} 
 .navContainer {
   display: flex;
   justify-content: space-evenly;
-  position: sticky;
   .nav-link {
     color: #826d5c;
     font-family: $principalFont;
@@ -31,7 +34,13 @@ nav {
       height: 30px;
       width: 7rem;
       align-items: center;
-
     }
   }
 }
+.nav-item {
+  transition: all 0.2s;
+}
+
+.nav-item:hover {
+  transform: scale(1.05);
+} 

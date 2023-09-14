@@ -3,6 +3,7 @@ $fontColor: #826d5c;
 $lightColor: #ead0ba;
 $backgroundColor: #fffaf6;
 $whiteColor: #ffffff;
+$primary:$fontColor;
 
 .banner {
   background-image: url("../assets/images/banner.png");
@@ -33,3 +34,34 @@ $whiteColor: #ffffff;
     border-radius: 0 0 2rem 2rem;
     width: 100%;
   }
+
+  @media (max-width: 320px){
+    .banner{
+      .bannerTitle{
+      font-size: 4rem;
+    }
+      .bannerSubTitle{
+      font-size: 3rem;
+    }
+  }
+
+    .serviciosTitle {
+      font-size: 1rem;
+    }
+    footer section a {
+     font-size: smaller;
+    }
+    .imagNovedades{
+      width: 25rem;
+    }
+    .col{
+      padding: 0px;
+      width: 25rem;
+      align-items: center;
+    }
+    .serviciosCard{
+      width: 25rem;
+    }
+    .row{
+      justify-content: center;
+    }}

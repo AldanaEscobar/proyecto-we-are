@@ -27,7 +27,6 @@
   font-size: 25px;
   color: $fontColor;
 }
-
 .important{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -36,15 +35,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: appear 1s ease;
+    // position: relative;
+    // animation: getIn 2s ease-in;
+}
+@keyframes appear{
+  0%{
+    opacity: 0;
+    }
+  100%{
+    opacity: 1;
+    }
+}
+@keyframes shadowDrop {
+  0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:12px 12px 20px -12px rgba(0,0,0,.35)}
 }
 .background {
     background-color: $backgroundColor;
     border-radius: 20px;
     width: 100%;
+    animation: appear 1s;
     h3{
         padding: 20px;
         color: $fontColor;
-        
     }
   }
   .carrouselText{
@@ -58,12 +71,17 @@
 .imagCarousel{
     margin-left: 4rem;
     border-radius: 15px;
+    width: 20rem;
 }
 .wsp {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-  }
+    bottom: 2rem;
+    right: 2rem;
+    transition: all 0.2s;
+}
+.wsp:hover {
+  transform: scale(1.05);
+} 
   .button1 {
     justify-content: center;
     align-content: center;
@@ -77,6 +95,11 @@
     flex-direction: column;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     text-decoration: none;
+    transition: all 0.2s;
+  }
+  .button1:hover{
+    animation: shadowDrop .2s cubic-bezier(.25,.46,.45,.94) backwards;
+    transform: scale(1.05);
   }
 .button2 {
     position: relative;
@@ -85,3 +108,32 @@
     flex-direction: column;
     color:#826D5C
   }
+
+  @media (max-width: 320px){
+  .imagCarousel{
+    width: 15rem;
+    margin: 2rem;
+  }
+  .sectionServicios{
+   align-items: center;
+   justify-content: center;
+.servicesCard {
+    margin:1rem;
+    a {
+        color:$fontColor;
+    }
+  }
+  .imgServicios {
+  
+  }
+}
+.principalTitle {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 25px;
+}
+.wspp{
+
+}
+}
