@@ -29,15 +29,47 @@
   width: 100%;
 }
 
+@media (max-width: 320px) {
+  .banner .bannerTitle {
+    font-size: 4rem;
+  }
+  .banner .bannerSubTitle {
+    font-size: 3rem;
+  }
+  .serviciosTitle {
+    font-size: 1rem;
+  }
+  footer section a {
+    font-size: smaller;
+  }
+  .imagNovedades {
+    width: 25rem;
+  }
+  .col {
+    padding: 0px;
+    width: 25rem;
+    align-items: center;
+  }
+  .serviciosCard {
+    width: 25rem;
+  }
+  .row {
+    justify-content: center;
+  }
+}
 .logo {
   border: 0px solid #ffffff;
   box-shadow: 0px 0px 0px 0px;
+  transition: all 0.2s;
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 
 .navContainer {
   display: flex;
   justify-content: space-evenly;
-  position: sticky;
 }
 .navContainer .nav-link {
   color: #826d5c;
@@ -62,6 +94,14 @@ nav ul li {
   height: 30px;
   width: 7rem;
   align-items: center;
+}
+
+.nav-item {
+  transition: all 0.2s;
+}
+
+.nav-item:hover {
+  transform: scale(1.05);
 }
 
 * {
@@ -104,12 +144,30 @@ nav ul li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: appear 1s ease;
 }
 
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes shadowDrop {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  100% {
+    box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
 .background {
   background-color: #fffaf6;
   border-radius: 20px;
   width: 100%;
+  animation: appear 1s;
 }
 .background h3 {
   padding: 20px;
@@ -128,12 +186,18 @@ nav ul li {
 .imagCarousel {
   margin-left: 4rem;
   border-radius: 15px;
+  width: 20rem;
 }
 
 .wsp {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 2rem;
+  right: 2rem;
+  transition: all 0.2s;
+}
+
+.wsp:hover {
+  transform: scale(1.05);
 }
 
 .button1 {
@@ -149,6 +213,12 @@ nav ul li {
   flex-direction: column;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   text-decoration: none;
+  transition: all 0.2s;
+}
+
+.button1:hover {
+  animation: shadowDrop 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) backwards;
+  transform: scale(1.05);
 }
 
 .button2 {
@@ -159,6 +229,28 @@ nav ul li {
   color: #826D5C;
 }
 
+@media (max-width: 320px) {
+  .imagCarousel {
+    width: 15rem;
+    margin: 2rem;
+  }
+  .sectionServicios {
+    align-items: center;
+    justify-content: center;
+  }
+  .sectionServicios .servicesCard {
+    margin: 1rem;
+  }
+  .sectionServicios .servicesCard a {
+    color: #826d5c;
+  }
+  .principalTitle {
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 25px;
+  }
+}
 footer {
   background-color: #ead0ba;
   border-radius: 35px 35px 0px 0px;
@@ -190,6 +282,17 @@ footer h5 {
   margin: 5px;
 }
 
+@media (max-width: 320px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  footer section {
+    align-items: center;
+  }
+}
 .containerDepi {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
