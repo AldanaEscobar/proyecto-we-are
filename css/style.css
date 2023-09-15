@@ -462,6 +462,39 @@ footer h5 {
   color: #826d5c;
 }
 
+@media (max-width: 320px) {
+  .depiContainer {
+    flex-direction: column;
+  }
+  .depiContainer .esteticaSection1 {
+    width: 95%;
+  }
+  .depiContainer .esteticaSection1 iframe {
+    margin: 1rem;
+    width: 90%;
+  }
+  .depiContainer .esteticaSection2 {
+    width: 95%;
+  }
+  .depiContainer .esteticaSection2 img {
+    width: 98%;
+  }
+  .depiContainer .esteticaSection2 .notShow {
+    display: none;
+  }
+  .important {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .esteticaBeneficios {
+    display: flex;
+    flex-direction: column;
+  }
+  .esteticaBeneficios .cardEstetica img {
+    width: 4rem;
+  }
+}
 .blogContainer {
   display: flex;
   justify-content: center;
@@ -474,6 +507,24 @@ footer h5 {
   padding-top: 20px;
 }
 
+@media (max-width: 320px) {
+  .blogContainer {
+    flex-direction: column;
+  }
+  .blogContainer a {
+    margin: 20px;
+  }
+  .blogContainer img {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .blogContainer img .blogSection1 {
+    align-items: center;
+  }
+  .blogContainer img .blogSection2 {
+    align-items: center;
+  }
+}
 .contactContainer {
   display: flex;
   justify-content: space-between;

@@ -61,4 +61,39 @@
         color: $fontColor;
       }
     }
-  
+    @media (max-width: 320px){
+      .depiContainer{
+        flex-direction: column;
+        .esteticaSection1 {
+          width: 95%;
+          iframe {
+            margin:1rem;
+            width:90%;
+          }
+        }
+        .esteticaSection2{
+          width: 95%;
+          img{
+            width: 98%;
+          }
+          .notShow{
+            display: none;
+          }
+        }
+      }
+      .important{
+          margin-top: 20px;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+        .esteticaBeneficios{
+          display: flex;
+          flex-direction: column;
+          .cardEstetica{
+            img{
+              width: 4rem;
+            }
+          }
+        }
+      }
+    
