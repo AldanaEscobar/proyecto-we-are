@@ -64,27 +64,29 @@
   .containerDepi {
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr; 
-    grid-template-rows: 100px 150px 30px 150px 0.5fr 1fr 1fr;
+    grid-template-rows: 100px 0.3fr 0.1fr 0.3fr 0.1fr 1fr 0.5fr;
   .img1 { grid-area: 2 / 1 / 4 / 3; }
   .img2 { grid-area: 3 / 2 / 5 / 4; }
   .title { grid-area: 1 / 1 / 2 / 4; }
   .button { grid-area: 5 / 1 / 6 / 4; }
   .text1 { grid-area: 6 / 1 / 7 / 4; }
-  .img3 { grid-area: 7 / 1 / 8 / 4;}
+  .img3 { grid-area: 7 / 1 / 8 / 4;
+    display: flex;
+    justify-content: center;}
   
   .depiImage {
-    max-width: 20rem;
-    margin: 1rem;
+    max-width: 90%;
+    margin: 0.5rem;
   }
   
   .depiImageInfo {
-    max-width: 93%;
+    max-width: 85%;
     margin-left: 1rem;
     margin-right: 1rem;
   }  
   .depiLaserSubTitle {
     font-size: 15px;
-    margin: 1rem;
+    margin: 0px;
   }
 }
 .buttonContainer {
