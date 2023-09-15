@@ -323,27 +323,27 @@ footer h5 {
   grid-area: 5/1/6/4;
 }
 .containerDepi .depiLaserSubTitle {
-  margin-top: 50px;
-  font-size: 20px;
+  margin-top: 2rem;
+  font-size: 1rem;
   font-weight: normal;
   text-align: center;
   color: #826d5c;
 }
 .containerDepi .bold {
   font-weight: bold;
-  margin: 30px;
+  margin: 1rem;
 }
 .containerDepi .depiImageInfo {
   max-width: 93%;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .containerDepi .depiImage {
   max-width: 30rem;
-  margin: 10px;
+  margin: 1rem;
 }
 .containerDepi .text li {
-  margin: 10px;
+  margin: 1rem;
   color: #826d5c;
 }
 .containerDepi .buttonContainer {
@@ -354,6 +354,47 @@ footer h5 {
   margin: 1rem;
 }
 
+@media (max-width: 320px) {
+  .containerDepi {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: 100px 150px 30px 150px 0.5fr 1fr 1fr;
+  }
+  .containerDepi .img1 {
+    grid-area: 2/1/4/3;
+  }
+  .containerDepi .img2 {
+    grid-area: 3/2/5/4;
+  }
+  .containerDepi .title {
+    grid-area: 1/1/2/4;
+  }
+  .containerDepi .button {
+    grid-area: 5/1/6/4;
+  }
+  .containerDepi .text1 {
+    grid-area: 6/1/7/4;
+  }
+  .containerDepi .img3 {
+    grid-area: 7/1/8/4;
+  }
+  .containerDepi .depiImage {
+    max-width: 20rem;
+    margin: 1rem;
+  }
+  .containerDepi .depiImageInfo {
+    max-width: 93%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .containerDepi .depiLaserSubTitle {
+    font-size: 15px;
+    margin: 1rem;
+  }
+  .buttonContainer {
+    text-align: center;
+  }
+}
 .depiContainer {
   display: flex;
   justify-content: space-between;
