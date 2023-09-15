@@ -60,7 +60,7 @@
     margin: 1rem;
   }
 }
-@media (max-width: 320px){
+@media (min-width: 320px) and (max-width: 425px){
   .containerDepi {
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr; 

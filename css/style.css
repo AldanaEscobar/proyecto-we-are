@@ -29,7 +29,7 @@
   width: 100%;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) {
   .banner .bannerTitle {
     font-size: 4rem;
   }
@@ -250,7 +250,7 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) {
   .imagCarousel {
     width: 15rem;
     margin: 2rem;
@@ -375,7 +375,7 @@ footer h5 {
   margin: 1rem;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 425px) {
   .containerDepi {
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr;
@@ -484,7 +484,7 @@ footer h5 {
   color: #826d5c;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 425px) {
   .depiContainer {
     flex-direction: column;
   }
@@ -534,7 +534,12 @@ footer h5 {
   padding-top: 20px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 1024px) {
+  .blogContainer {
+    flex-direction: column;
+  }
+}
+@media (max-width: 425px) {
   .blogContainer {
     flex-direction: column;
   }
@@ -547,14 +552,10 @@ footer h5 {
   }
   .blogContainer img .blogSection1 {
     align-items: center;
+    width: 80%;
   }
   .blogContainer img .blogSection2 {
     align-items: center;
-  }
-}
-@media (max-width: 1024px) {
-  .blogContainer {
-    flex-direction: column;
   }
 }
 .contactContainer {
@@ -622,7 +623,7 @@ footer h5 {
   color: #826d5c;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 425px) {
   .contactContainer {
     flex-direction: column;
   }

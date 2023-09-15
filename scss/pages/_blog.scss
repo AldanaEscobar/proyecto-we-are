@@ -9,7 +9,12 @@
     padding-top: 20px;
   }
 }
-@media (max-width: 320px){
+@media (max-width: 1024px){
+  .blogContainer {
+    flex-direction: column;}
+}
+
+@media (max-width: 425px){
 .blogContainer{
   flex-direction: column;
   a{
@@ -20,15 +25,20 @@
     margin-bottom: 20px;
     .blogSection1{
       align-items: center;
+      width: 80%;
     }
     .blogSection2{
       align-items: center;
     }
   }
-}
-}
-@media (max-width: 1024px){
-  .blogContainer{
-    flex-direction: column;
-  }
-}
+}}
+// }
+// @media (min-width: 1024px){
+//   .blogContainer{
+//     display: flex;
+//     align-items: center;
+//     img{
+//       width: 15rem;
+//     }
+//   }
+// }

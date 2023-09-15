@@ -58,7 +58,7 @@
         border-width: 0.5px;
         color:$fontColor;
   }
-  @media (max-width: 320px){
+  @media (min-width: 320px) and (max-width: 425px){
     .contactContainer {
       flex-direction: column;
       .contacto{
