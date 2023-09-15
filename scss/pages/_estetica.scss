@@ -17,7 +17,8 @@
             margin-bottom: 15px;
             font-size: 20px;
             font-weight: normal;
-            color: $fontColor
+            color: $fontColor;
+            text-align: center;
           }
       }
       .esteticaSection2 {
@@ -95,4 +96,13 @@
           }
         }
       }
-    
+      @media (max-width: 1024px){
+        .depiContainer{
+        .esteticaSection2{
+          img{
+            width: 100%;
+            margin: 3rem;
+          }
+        }
+        }
+      }

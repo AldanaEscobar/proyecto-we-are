@@ -27,3 +27,8 @@
   }
 }
 }
+@media (max-width: 1024px){
+  .blogContainer{
+    flex-direction: column;
+  }
+}
