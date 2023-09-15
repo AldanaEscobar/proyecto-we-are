@@ -76,6 +76,9 @@
 .navContainer {
   display: flex;
   justify-content: center;
+  position: sticky;
+  top: 1rem;
+  z-index: 3;
 }
 .navContainer .nav-link {
   color: #826d5c;
@@ -241,6 +244,10 @@ nav ul li {
   width: 300px;
   flex-direction: column;
   color: #826D5C;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media (max-width: 320px) {

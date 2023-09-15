@@ -14,6 +14,9 @@
 .navContainer {
   display: flex;
   justify-content: center;
+  position: sticky;
+  top: 1rem;
+  z-index: 3;
   .nav-link {
     color: #826d5c;
     font-family: $principalFont;
