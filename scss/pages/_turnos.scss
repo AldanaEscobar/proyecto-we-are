@@ -1,0 +1,55 @@
+.formContainer {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+  justify-content: space-around;
+}
+.turnosSection {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+}
+.imageForm {
+  border-radius: 10px;
+  width: 100%;
+}
+// turnoConfirmacion
+
+  .confirmacionTitle {
+    margin-top: 2rem;
+  }
+  .sectionText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $fontColor;
+    a{
+        text-decoration: underline;
+        color: $fontColor;
+    }
+  }
+  .confirmacioniSection{
+    text-align: center;
+    margin: 2rem;
+
+  };
+
+//   repsonisve
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .formContainer {
+    flex-direction: column;
+  }
+  .turnosSection{
+    width: 100%;
+  }
+  .confirmacioniSection{
+    margin: 0;
+    margin-top: 2rem;
+}
+}

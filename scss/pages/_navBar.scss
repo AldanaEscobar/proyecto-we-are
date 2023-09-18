@@ -1,8 +1,4 @@
-// .container-fluid{
-//   justify-content: center;
-//   justify-content: space-between;
-//   align-content: space-between;
-// }
+
 .logo {
   border: 0px solid #ffffff;
   box-shadow: 0px 0px 0px 0px;
@@ -35,6 +31,10 @@
     z-index: 2;
     background-color: #ffffff;
   }
+  .container-fluid{
+    width: 10%;
+    align-items: flex-start;
+  }
 }
 nav {
   ul {
@@ -65,6 +65,7 @@ nav {
       justify-content: space-between;
       align-content: flex-start;
       align-items: flex-start;
+      width: 95%;
     }
   }
   .navContainer {

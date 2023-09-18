@@ -15,13 +15,15 @@
         margin: 15px;
         color:$fontColor
       }
-      p {color:$fontColor}
-      iframe {
-        margin-bottom: 20px;
-        margin-top: 10px;
-        border-radius: 10px;
+      p {
+        color:$fontColor
       }
 }
+  }
+  iframe {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
   }
 .form {
     padding: 20px;
@@ -59,14 +61,15 @@
         color:$fontColor;
   }
   @media (min-width: 320px) and (max-width: 425px){
+    
     .contactContainer {
       flex-direction: column;
       .contacto{
         width: 95%;
-        iframe{
-          width: 95%;
-        }
       }
+    }
+    iframe{
+      width: 95%;
     }
     .form{
       margin: 0px;
