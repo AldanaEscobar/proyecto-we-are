@@ -6,7 +6,7 @@ footer {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 
   section {
@@ -15,6 +15,7 @@ footer {
     justify-content: space-around;
     height: 200px;
     text-align: justify;
+    margin: 6rem;
 
     a {
       color: #ffffff;
@@ -34,7 +35,7 @@ footer {
   h5 {
     font-size: 1.2rem;
     color: $whiteColor;
-    margin: 5px;
+    margin-bottom: 1.5rem
   }
 }
 
