@@ -1,24 +1,29 @@
-*{
-    font-family: $principalFont;
+* {
+  font-family: $principalFont;
 }
-.sectionServicios{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-.servicesCard {
+
+.sectionServicios {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  .servicesCard {
     background-color: $backgroundColor;
     align-items: center;
+
     a {
-        color:$fontColor;
-    }
+      color: $fontColor;
   }
+}
+
   .imgServicios {
     width: 90%;
     margin: 1rem;
   }
 }
+
 .principalTitle {
   padding: 30px;
   font-weight: bolder;
@@ -27,111 +32,134 @@
   font-size: 25px;
   color: $fontColor;
 }
-.important{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    animation: appear 1s ease;
-    // position: relative;
-    // animation: getIn 2s ease-in;
+
+.important {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-@keyframes appear{
-  0%{
-    opacity: 0;
-    }
-  100%{
-    opacity: 1;
-    }
+
+.card-text{
+  font-size: 1.2rem;
 }
+.card-text:hover{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
 @keyframes shadowDrop {
-  0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:12px 12px 20px -12px rgba(0,0,0,.35)}
-}
-.background {
-    background-color: $backgroundColor;
-    border-radius: 20px;
-    width: 100%;
-    animation: appear 1s;
-    h3{
-        padding: 20px;
-        color: $fontColor;
-    }
-  }
-  .carrouselText{
-    margin: 10px;
-    text-align: center;
-    color: $fontColor;
-    a {
-        text-decoration: none;
-    }
-  }
-.imagCarousel{
-    margin-left: 4rem;
-    border-radius: 15px;
-    width: 20rem;
-}
-.wsp {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    transition: all 0.2s;
-    z-index: 3;
-}
-.wsp:hover {
-  transform: scale(1.05);
-} 
-  .button1 {
-    justify-content: center;
-    align-content: center;
-    background-color: #ead0ba;
-    color: #ffffff;
-    border: 1px solid #b4a090;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 5px;
-    position: justify;
-    flex-direction: column;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    text-decoration: none;
-    transition: all 0.2s;
-  }
-  .button1:hover{
-    animation: shadowDrop .2s cubic-bezier(.25,.46,.45,.94) backwards;
-    transform: scale(1.05);
-  }
-.button2 {
-    position: relative;
-    margin: 10px;
-    width: 300px;
-    flex-direction: column;
-    color:#826D5C
-  }
-  a{
-    text-decoration: none;
+  0% {
+    box-shadow: 0 0 0 0 transparent
   }
 
-  @media (min-width: 320px){
-  .imagCarousel{
+  100% {
+    box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, .35)
+  }
+}
+
+.background {
+  background-color: $backgroundColor;
+  border-radius: 20px;
+  width: 100%;
+
+  h3 {
+    padding: 20px;
+    color: $fontColor;
+  }
+}
+
+.carrouselText {
+  margin: 10px;
+  text-align: center;
+  color: $fontColor;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.imagCarousel {
+  margin-left: 4rem;
+  border-radius: 15px;
+  width: 20rem;
+}
+
+.wsp {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  transition: all 0.2s;
+  z-index: 3;
+}
+
+.wsp:hover {
+  transform: scale(1.05);
+}
+
+.button1 {
+  justify-content: center;
+  align-content: center;
+  background-color: #ead0ba;
+  color: #ffffff;
+  border: 1px solid #b4a090;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  position: justify;
+  flex-direction: column;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.button1:hover {
+  animation: shadowDrop .2s cubic-bezier(.25, .46, .45, .94) backwards;
+  transform: scale(1.05);
+}
+
+.button2 {
+  position: relative;
+  margin: 10px;
+  width: 300px;
+  flex-direction: column;
+  color: #826D5C
+}
+.button2:hover{
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 320px) {
+  .imagCarousel {
     width: 15rem;
     margin: 2rem;
   }
-  .sectionServicios{
-   align-items: center;
-   justify-content: center;
-.servicesCard {
-    margin:1rem;
-    a {
-        color:$fontColor;
+
+  .sectionServicios {
+    align-items: center;
+    justify-content: center;
+
+    .servicesCard {
+      margin: 1rem;
+
+      a {
+        color: $fontColor;
+      }
     }
   }
-}
-.principalTitle {
-  width: 100%;
-  padding: 1.5rem;
-  text-align: center;
-  font-size: 25px;
-}
+
+  .principalTitle {
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 25px;
+  }
 }
