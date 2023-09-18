@@ -377,6 +377,7 @@ footer h5 {
   }
   footer section {
     align-items: center;
+    margin: 0rem;
   }
 }
 .containerDepi {
