@@ -61,7 +61,7 @@
   border: 0px solid #ffffff;
   box-shadow: 0px 0px 0px 0px;
   transition: all 0.2s;
-  align-self: center;
+  text-align: center;
 }
 
 .logo:hover {
@@ -117,15 +117,21 @@ nav ul li {
 }
 
 @media (min-width: 320px) and (max-width: 425px) {
-  .container-fluid {
+  .navBar .container-fluid {
+    justify-content: space-between;
+    align-content: flex-start;
     align-items: flex-start;
-    height: 2rem;
   }
   .navContainer {
     align-items: flex-start;
+    align-content: center;
   }
   .navbar {
     align-items: center;
+  }
+  .nav-item {
+    background-color: #ffffff;
+    margin: 0.5rem;
   }
 }
 * {
