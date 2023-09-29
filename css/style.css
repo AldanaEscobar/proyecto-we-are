@@ -312,7 +312,10 @@ a {
   text-decoration: none;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 1000px) {
+  .widthColum {
+    width: 30%;
+  }
   .imagCarousel {
     width: 15rem;
     margin: 2rem;
@@ -322,7 +325,7 @@ a {
     justify-content: center;
   }
   .sectionServicios .servicesCard {
-    margin: 1rem;
+    margin: 0.5rem;
   }
   .sectionServicios .servicesCard a {
     color: #826d5c;
