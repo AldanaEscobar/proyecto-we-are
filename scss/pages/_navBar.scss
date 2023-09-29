@@ -25,7 +25,7 @@
     align-items: center;
     border: 1px solid #826d5c;
     border-radius: 25px;
-    height: 60px;
+    height: 4rem;
     width: 95%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     z-index: 2;
@@ -59,7 +59,12 @@ nav {
 .nav-item:hover {
   transform: scale(1.05);
 }
-@media (min-width: 320px) and (max-width: 425px) {
+@media (max-width: 992px) {
+  .navbar-toggler {
+    margin-right: 10px; /* Espacio entre el icono y el botón */
+  }
+}
+@media (min-width: 320px) and (max-width: 992px) {
   .navBar {
     .container-fluid {
       justify-content: space-between;
