@@ -247,6 +247,11 @@ nav ul li {
   color: #826d5c;
 }
 
+.d-flex {
+  display: flex;
+  justify-content: center;
+}
+
 .carrouselText {
   margin: 10px;
   text-align: center;
