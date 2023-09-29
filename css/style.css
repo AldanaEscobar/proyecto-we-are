@@ -365,7 +365,7 @@ footer {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 footer section {
@@ -396,7 +396,7 @@ footer h5 {
   margin-bottom: 1.5rem;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 900px) {
   footer {
     display: flex;
     flex-direction: column;
