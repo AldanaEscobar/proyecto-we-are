@@ -229,6 +229,10 @@ nav ul li {
   font-weight: bold;
 }
 
+.row > * {
+  max-width: 90%;
+}
+
 @keyframes shadowDrop {
   0% {
     box-shadow: 0 0 0 0 transparent;
