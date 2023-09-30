@@ -716,7 +716,7 @@ iframe {
   color: #826d5c;
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 900px) {
   .contactContainer {
     flex-direction: column;
   }
