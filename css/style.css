@@ -557,6 +557,7 @@ footer .brand {
   flex-direction: column;
   justify-self: center;
   align-self: center;
+  text-align: center;
 }
 .depiContainer .esteticaSection2 h3 {
   margin-bottom: 15px;
@@ -564,9 +565,25 @@ footer .brand {
   font-weight: normal;
   color: #826d5c;
 }
-.depiContainer .esteticaSection2 img {
-  margin: 10px;
-  border-radius: 10px;
+
+.container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  color: #826d5c;
+  font-weight: bolder;
+}
+.container .imagen {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .esteticaBeneficios {
@@ -629,42 +646,14 @@ footer .brand {
     margin: 3rem;
   }
 }
-.blogContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.blogContainer .blogSection1 {
-  padding: 10px;
-}
-.blogContainer .blogSection2 {
-  padding-top: 20px;
+.background {
+  background-color: #fffaf6;
 }
 
-@media (max-width: 1024px) {
-  .blogContainer {
-    flex-direction: column;
-  }
+.text {
+  color: #826d5c;
 }
-@media (max-width: 425px) {
-  .blogContainer {
-    flex-direction: column;
-  }
-  .blogContainer a {
-    margin: 20px;
-  }
-  .blogContainer img {
-    width: 90%;
-    margin-bottom: 20px;
-  }
-  .blogContainer img .blogSection1 {
-    align-items: center;
-    width: 80%;
-  }
-  .blogContainer img .blogSection2 {
-    align-items: center;
-  }
-}
+
 .contactContainer {
   display: flex;
   justify-content: space-between;
