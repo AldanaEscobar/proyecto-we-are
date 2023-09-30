@@ -68,26 +68,30 @@
     <!-- Form -->
     <main>
     <div class="formContainer">
-      <form class="turnosSection background form">
-        <h3>Solicitá tu turno</h3>
-        <br><br>
+      <form class="turnosSection background form row g-3">
+      <div class="">
+        <h3 class="principalTitle">Solicitá tu turno</h3>
+        <!-- Select -->
         <label for="">Que tratamiento?</label>
-        <br>
-        <select name="consulta" aria-placeholder="Selecciona un tratamiento" class="input">
+        <select class="form-select form-select-sm " aria-label="Small select example">
+          <option selected>Seleciona un tratamiento</option>
           <option value="DD">Depilacion definitiva</option>
           <option value="Him">Himfu</option>
           <option value="Crio">Criolipolisis</option>
           <option value="Ri">Reiki</option>
         </select>
-        <br><br>
+        <!-- DatePicker -->
         <label for="fecha">Elige un día:</label>
-        <br>
-        <input type="date" id="fecha" name="fecha" class="input">
-        <br><br>
+        <div class="m-3">
+          <input type="date" class="form-control" id="exampleFormControlInput1"  id='picker'>
+        </div>
+        <!-- TimePicker -->
         <label for="horario">Elige un horario:</label>
-        <br>
-        <input type="time" id="horario" name="horario" min="10:00" max="18:00" class="input">
-        <br><br>
+        <div class="m-3">
+          <input type="time" class="form-control w-100" id="exampleFormControlInput1"  id='picker' min="10:00" max="18:00">
+        </div>
+      </div>
+      <!-- Button -->
         <a class="button1" href="./turnoConfirmacion.html">Solicitá tu turno!</a>
       </form>
       <div class=".turnosSection">
