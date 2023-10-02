@@ -84,34 +84,26 @@
       </div>
       <!-- Contact Form -->
       <form form action="#" method="get" class="contacto background form">
-
-        <div class="row">
-          <div class="col">
+        <!-- Name and Email inputs -->
             <label for="Nombre"> Nombre:</label>
-            <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
-          </div>
-          <div class="col">
+            <input type="text" class="form-control form-control-sm fontColor m-2" placeholder="Nombre" aria-label="First name">
             <label for="Email"> Email:</label>
-            <input type="text" class="form-control" placeholder="Correo electrónico" aria-label="Email">
-          </div>
-        </div>
-        <label> ¿Por que es tu consulta?</label>
-        <br>
-
-        <select class="form-select form-select-sm" aria-label="Small select example">
-          <option selected>Elige una opcion</option>
+            <input type="text" class="form-control form-control-sm fontColor m-2" placeholder="Correo electrónico" aria-label="Email">
+       <!-- Select -->
+            <label> ¿Por que es tu consulta?</label>
+        <select class="form-select form-select-sm fontColor m-2" aria-label="Small select example">
+          <option selected class="fontColor">Elige una opcion</option>
           <option value="dd">Depilacion definitiva</option>
           <option value="es">Estética</option>
           <option value="ma">Masajes</option>
           <option value="ot">Otro</option>
         </select>
+        <!-- Text Area -->
         <label> Déjanos tu consulta</label>
-        <br>
-        <div class="form-floating">
-          <textarea class="form-control w-100" placeholder="Deje un comentario aqui" id="floatingTextarea2"></textarea>
+        <div class="form-floating fontColor m-2">
+          <textarea class="form-control" placeholder="Deje un comentario aqui" id="floatingTextarea2" style="height: 100px; width: 100%;"></textarea>
           <label for="floatingTextarea2">Ingresa tu consulta aca</label>
         </div>
-        <br><br>
         <input type="submit" class="button1">
       </form>
     </div>
