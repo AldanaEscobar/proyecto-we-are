@@ -244,6 +244,11 @@ nav ul li {
   max-width: 90%;
 }
 
+.cardsContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 @keyframes shadowDrop {
   0% {
     box-shadow: 0 0 0 0 transparent;
