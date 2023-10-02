@@ -682,6 +682,7 @@ iframe {
   margin-bottom: 20px;
   margin-top: 10px;
   border-radius: 10px;
+  width: 95%;
 }
 
 .form {
@@ -718,9 +719,6 @@ iframe {
     flex-direction: column;
   }
   .contactContainer .contacto {
-    width: 95%;
-  }
-  iframe {
     width: 95%;
   }
   .form {
