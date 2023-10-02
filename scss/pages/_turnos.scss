@@ -36,6 +36,9 @@
     margin: 2rem;
 
   };
+  .fontColor{
+    color: $fontColor;
+  }
   .fontColor::placeholder{
     color: $fontColor;
   }

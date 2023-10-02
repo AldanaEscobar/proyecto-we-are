@@ -772,6 +772,10 @@ iframe {
   margin: 2rem;
 }
 
+.fontColor {
+  color: #826d5c;
+}
+
 .fontColor::placeholder {
   color: #826d5c;
 }
