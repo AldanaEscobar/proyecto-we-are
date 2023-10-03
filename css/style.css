@@ -747,6 +747,12 @@ footer .brand {
   color: #826d5c;
 }
 
+@media (min-width: 320px) and (max-width: 900px) {
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
 .contactContainer {
   display: flex;
   justify-content: space-between;
