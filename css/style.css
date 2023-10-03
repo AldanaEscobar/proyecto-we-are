@@ -621,7 +621,7 @@ footer .brand {
 }
 .depiContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   margin-top: 30px;
 }
@@ -702,7 +702,7 @@ footer .brand {
   color: #826d5c;
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 900px) {
   .depiContainer {
     flex-direction: column;
   }
@@ -718,6 +718,11 @@ footer .brand {
   }
   .depiContainer .esteticaSection2 img {
     width: 98%;
+    margin: 0px;
+  }
+  .depiContainer .esteticaSection2 h2 {
+    font-size: medium;
+    width: 250px;
   }
   .depiContainer .esteticaSection2 .notShow {
     display: none;
@@ -732,12 +737,6 @@ footer .brand {
   }
   .esteticaBeneficios .cardEstetica img {
     width: 4rem;
-  }
-}
-@media (max-width: 1024px) {
-  .depiContainer .esteticaSection2 img {
-    width: 100%;
-    margin: 3rem;
   }
 }
 .background {
