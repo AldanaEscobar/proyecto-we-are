@@ -1,6 +1,6 @@
 .depiContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   margin-top: 30px;
 
@@ -87,7 +87,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 900px) {
   .depiContainer {
     flex-direction: column;
 
@@ -105,6 +105,11 @@
 
       img {
         width: 98%;
+        margin: 0px;
+      }
+      h2{
+        font-size: medium;
+        width: 250px;
       }
 
       .notShow {
@@ -125,17 +130,6 @@
     .cardEstetica {
       img {
         width: 4rem;
-      }
-    }
-  }
-}
-
-@media (max-width: 1024px) {
-  .depiContainer {
-    .esteticaSection2 {
-      img {
-        width: 100%;
-        margin: 3rem;
       }
     }
   }

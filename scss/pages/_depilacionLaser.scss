@@ -73,7 +73,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width:500px){
   .containerDepi {
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr;
@@ -106,8 +106,8 @@
     }
 
     .depiImage {
-      max-width: 90%;
-      margin: 0.5rem;
+      max-width: 85%;
+      margin:0px;
     }
 
     .depiImageInfo {
@@ -125,5 +125,111 @@
   .buttonContainer {
     text-align: center;
 
+  }
+}
+@media (min-width: 400px) and (max-width: 500px){
+  .containerDepi {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: 0.5fr 0.3fr 0.1fr 0.5fr 0.1fr 1fr 0.5fr;
+
+    .img1 {
+      grid-area: 2 / 1 / 4 / 3;
+    }
+
+    .img2 {
+      grid-area: 3 / 2 / 5 / 4;
+    }
+
+    .title {
+      grid-area: 1 / 1 / 2 / 4;
+    }
+
+    .button {
+      grid-area: 5 / 1 / 6 / 4;
+    }
+
+    .text1 {
+      grid-area: 6 / 1 / 7 / 4;
+    }
+
+    .img3 {
+      grid-area: 7 / 1 / 8 / 4;
+      display: flex;
+      justify-content: center;
+    }
+    .depiImage{
+      margin: 0px;
+      max-width: 70%;
+    }
+    .depiImageInfo{
+      margin: 0px;
+    }
+  }
+}
+@media (min-width: 500px) and (max-width: 700px){
+  .containerDepi {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: 0.5fr 0.3fr 0.3fr 0.5fr 0.5fr 1fr 0.5fr;
+
+    .img1 {
+      grid-area: 2 / 1 / 4 / 3;
+    }
+
+    .img2 {
+      grid-area: 3 / 2 / 5 / 4;
+    }
+
+    .title {
+      grid-area: 1 / 1 / 2 / 4;
+    }
+
+    .button {
+      grid-area: 5 / 1 / 6 / 4;
+    }
+
+    .text1 {
+      grid-area: 6 / 1 / 7 / 4;
+    }
+
+    .img3 {
+      grid-area: 7 / 1 / 8 / 4;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+@media (min-width: 700px) and (max-width: 900px){
+  .containerDepi {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 0.7fr 0.3fr 0.3fr 0.7fr 0.5fr 1fr 0.5fr;
+
+    .img1 {
+      grid-area: 2 / 1 / 4 / 3;
+    }
+
+    .img2 {
+      grid-area: 3 / 2 / 5 / 4;
+    }
+
+    .title {
+      grid-area: 1 / 1 / 2 / 4;
+    }
+
+    .button {
+      grid-area: 5 / 1 / 6 / 4;
+    }
+
+    .text1 {
+      grid-area: 6 / 1 / 7 / 4;
+    }
+
+    .img3 {
+      grid-area: 7 / 1 / 8 / 4;
+      display: flex;
+      justify-content: center;
+    }
   }
 }
