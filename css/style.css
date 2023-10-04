@@ -87,9 +87,6 @@
   .serviciosCard {
     width: 25rem;
   }
-  .row {
-    justify-content: center;
-  }
 }
 .logo {
   border: 0px solid #ffffff;
@@ -203,6 +200,7 @@ nav ul li {
 .sectionServicios .servicesCard {
   background-color: #fffaf6;
   align-items: center;
+  margin: 0.5rem;
 }
 .sectionServicios .servicesCard a {
   color: #826d5c;
