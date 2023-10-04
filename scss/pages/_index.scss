@@ -12,6 +12,7 @@
   .servicesCard {
     background-color: $backgroundColor;
     align-items: center;
+    margin: 0.5rem;
 
     a {
       color: $fontColor;
@@ -169,11 +170,13 @@ a {
       }
     }
   }
-
   .principalTitle {
     width: 100%;
     padding: 1.5rem;
     text-align: center;
     font-size: 25px;
+  }
+  .wsp {
+    width: 50px;
   }
 }
