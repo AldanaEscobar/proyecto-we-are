@@ -73,7 +73,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width:500px){
+@media (min-width: 320px) and (max-width:400px){
   .containerDepi {
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr;
@@ -112,8 +112,8 @@
 
     .depiImageInfo {
       max-width: 85%;
-      margin-left: 1rem;
-      margin-right: 1rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
     }
 
     .depiLaserSubTitle {
@@ -163,8 +163,9 @@
       max-width: 70%;
     }
     .depiImageInfo{
-      margin: 0px;
-    }
+      margin-left: 0rem;
+      margin-right: 0rem;
+  }
   }
 }
 @media (min-width: 500px) and (max-width: 700px){
@@ -198,9 +199,15 @@
       display: flex;
       justify-content: center;
     }
+  .depiImageInfo{
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
+.depiImage{
+  margin: 0px;
+}}
 }
-@media (min-width: 700px) and (max-width: 900px){
+@media (min-width: 700px) and (max-width: 925px){
   .containerDepi {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
@@ -231,5 +238,13 @@
       display: flex;
       justify-content: center;
     }
+  .depiImageInfo{
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
+  .depiImage {
+    max-width: 25rem;
+    margin: 1rem;
+}
+}
 }
